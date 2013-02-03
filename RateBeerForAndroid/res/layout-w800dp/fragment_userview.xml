@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" 
+	android:layout_width="match_parent" 
+	android:layout_height="wrap_content"
+	android:padding="10dip">
+
+	<FrameLayout 
+		android:id="@+id/imageframe"
+		android:layout_width="200dip"
+		android:layout_height="wrap_content"
+		android:padding="10dip"
+		android:layout_marginRight="20dip">
+		<ImageView 
+			android:id="@+id/image"
+			android:layout_width="match_parent" 
+			android:layout_height="wrap_content"
+			android:layout_gravity="center_horizontal"
+			android:scaleType="fitCenter"
+			android:contentDescription="@string/user_picture" />
+	</FrameLayout>
+
+	<ListView
+		android:id="@+id/userview"
+		android:layout_height="match_parent"
+		android:layout_width="match_parent"
+		android:layout_toRightOf="@id/imageframe"
+		android:cacheColorHint="@color/BackgroundLight" />
+	
+</RelativeLayout>
