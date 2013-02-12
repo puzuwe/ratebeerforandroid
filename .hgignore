@@ -1,0 +1,10 @@
+
+syntax: glob
+
+# Ignore patterns
+.metadata/
+bin/
+gen/
+.apt_generated/
+local.properties
+ant.properties
